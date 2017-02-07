@@ -1,3 +1,14 @@
+<!--
+
+  Hi! Thanks for pressing Ctrl+U.
+
+  Take a look at this code. This is my first Jekyll theme, and it's also using cutting-edge technology. I'm currently using a version of Bootstrap 4 compiled from the Sass files, and I'll be adding new HTML+CSS+JS technologies as I learn & practice with them.
+  This website is hosted with GitHub Pages. For other works, take a loot at my GitHub page or my "Works" page.
+  For any other questions, please email me: hola [at] szz [dot] cl.
+
+  S.
+
+-->
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
@@ -7,11 +18,17 @@
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+              {{ content }}
+            </div>
+          </main>
+        </div>
       </div>
-    </main>
+    </div>
 
     {% include footer.html %}
 

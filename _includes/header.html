@@ -1,30 +1,26 @@
 <header class="site-header" role="banner">
 
-  <div class="container">
-
-    <h1><a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h1>
-
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">SZZ.cl</a>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+  <div class="container-fluid">
+    <!-- Row que contiene logo y menú - Al avanzar hay que cambiar las columnas para adaptarse a desktops -->
+    <div class="row">
+      <!-- Col que contiene logo -->
+      <div class="col-4 col-sm-2 col-xl-1">
+        <div class="py-3" style="background-color: #CCC;">
+          <img src="{{ "/assets/img/logo.svg" | relative_url }}" class="d-block mx-auto my-3" style="max-height: 150px;">
+        </div>
+        <h4 class="my-2" style="font-weight: 300; line-height: 100%;"><a class="site-title" href="{{ "/" | relative_url}}" style="text-decoration: none; color: #333;">{{ site.title | escape }}</a></h4>
+      </div>
+      <!-- Col que contiene menú y links a redes -->
+      <div class="col-8 col-sm-10 col-xl-11">
+        <nav class="nav flex-column">
           {% for my_page in site.pages %}
             {% if my_page.title %}
-            <li class="nav-item">
               <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            </li>
             {% endif %}
           {% endfor %}
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+          <a class="nav-link" href="http://works.szz.cl/">Works</a>
+        </nav>
       </div>
-    </nav>
+    </div>
   </div>
 </header>
