@@ -1,15 +1,20 @@
 <footer class="site-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="footer-heading">{{ site.title | escape }}</h2>
+  <div class="container-fluid">
+    <div class="row justify-content-between">
+      <div class="col-3">
+        Sofía Zapata Zavala<br>
+        <small>State-of-the-art trans gal</small>
+      </div>
+      <div class="col-3">
+        <p class="text-md-right">Made with ❤ using Jekyll.</p>
       </div>
     </div>
+    <!--
     <div class="row">
       <div class="col">
         <div class="footer-col footer-col-1">
-          <ul class="contact-list">
-            <li>
+          <ul class="contact-list list-group">
+            <li class="list-group-item">
               {% if site.author %}
                 {{ site.author | escape }}
               {% else %}
@@ -17,21 +22,21 @@
               {% endif %}
             </li>
             {% if site.email %}
-              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              <li class="list-group-item"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
           </ul>
         </div>
       </div>
       <div class="col">
         <div class="footer-col footer-col-2">
-          <ul class="social-media-list">
+          <ul class="social-media-list list-group">
             {% if site.github_username %}
-            <li>
+            <li class="list-group-item">
               {% include icon-github.html username=site.github_username %}
             </li>
             {% endif %}
             {% if site.twitter_username %}
-            <li>
+            <li class="list-group-item">
               {% include icon-twitter.html username=site.twitter_username %}
             </li>
             {% endif %}
@@ -44,6 +49,7 @@
         </div>
       </div>
     </div>
+   -->
   </div>
 </footer>
 
