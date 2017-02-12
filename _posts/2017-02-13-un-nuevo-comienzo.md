@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Un nuevo comienzo"
-date:   2017-02-13 06:50:00 -0300
+date:   2017-02-06 06:50:00 -0300
 categories: blog
 ---
 **¡Buenos días, Santiago!**
