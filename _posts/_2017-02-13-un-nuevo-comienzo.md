@@ -4,6 +4,8 @@ title:  "Un nuevo comienzo"
 date:   2017-02-06 06:50:00 -0300
 categories: blog
 ---
+![Un nuevo comienzo]({{ site.baseurl }}/assets/img/blog/2017-02-mar-md.jpg "Un nuevo comienzo")
+
 **¡Buenos días, Santiago!**
 
 Estoy contenta. Por fin me hice el tiempo de actualizar mi sitio web. Espero que, con el tiempo, pueda lograr tener una imagen más consistente con el fin de saber que, si estás buscando información sobre mí, la puedas tener.
