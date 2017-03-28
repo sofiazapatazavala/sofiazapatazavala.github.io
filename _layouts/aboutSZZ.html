@@ -3,58 +3,24 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="bg-inverse">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2 col-xl-1">
           {% include header.html %}
         </div>
         <div class="col pt-3">
-          <main class="page-content" aria-label="Content">
-            <div class="wrapper">
+          <article class="post">
+            <header class="post-header">
+              <h1 class="post-title">{{ page.title | escape }}</h1>
+            </header>
+            <div class="post-content">
               {{ content }}
-              <div class="row">
-                {% for post in site.posts %}
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-block">
-                      <span class="post-meta">{{ post.date | date: "%-d/%b/%Y" }}</span>
-                      <h6 class="post-meta">{{ post.categories }}</h6>
-                      <h3>
-                        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                {% endfor %}
-              </div>
-              <p class="rss-subscribe">Puedes suscribirte también <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>.</p>
             </div>
-          </main>
+          </article>
         </div>
       </div>
     </div>
-
-    <!-- REVISAR EN SANTIAGO -->
-    <div class="container-fluid" style="height: 40vh; transform: skewY(-3deg); background-color: #9c32a6; z-index: 2000;">
-      <div class="row">
-        <div class="col-md-3 offset-md-8 mt-5" style="transform: skewY(3deg);">
-          <h1 class="p-1 d-inline-block" style="background-color: #ff8000;">HOLA</h1>
-        </div>
-      </div>
-    </div>
-    <!--
-      REVISAR EN SANTIAGO para que el posicionamiento no afecte los elementos del footer.
-      Aquí irá (próximamente) el feed de Instagram
-
-    <div class="container-fluid" style="height: 40vh; background-color: #d6451e; top: -2.25rem; z-index: 1000;">
-      <div class="row">
-        <div class="col-md-3 offset-md-8 mt-5">
-          <h1 class="p-1 d-inline-block" style="background-color: #0080ff;">HOLA</h1>
-        </div>
-      </div>
-    </div>
-    -->
 
     {% include footer.html %}
 

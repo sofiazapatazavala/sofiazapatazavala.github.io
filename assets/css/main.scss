@@ -1,5 +1,27 @@
 ---
 ---
+
+@import "bootstrap";
+
+body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, body.page-darks h4, body.page-darks h5, body.page-darks h6  {
+  color: $gray-lighter;
+}
+
+h1.szz-title {
+  font-weight: 300;
+  line-height: 100%;
+}
+
+h1.szz-title a {
+  text-decoration: none;
+  color: #333;
+  display: table-caption;
+}
+
+.page-darks h1.szz-title a, .page-darks h1.post-title {
+  color: $gray-lightest;
+}
+
 .site-footer {
   line-height: 1.2rem;
   border-top: solid 1px #999;

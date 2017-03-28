@@ -35,3 +35,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
 repository: "sofiazapatazavala/sofiazapatazavala.github.io"
+sass:
+  sass_dir: _sass
