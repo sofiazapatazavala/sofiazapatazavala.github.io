@@ -18,8 +18,8 @@
 
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <!-- og:image is not here on purpose, so the crawler takes the first image -->
+  <meta property="og:url" content="{{site.baseurl}}{{ page.url }}">
+  <meta property="og:image" content="{{ "/assets/img/logo.png" | relative_url }}">
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
