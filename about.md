@@ -22,6 +22,6 @@ Welcome!
 
 #### S.
 
-[✨ Download CV: Spanish ✨]({{ site.baseurl }}/assets/CV-es.pdf "CV"){:class="btn btn-lg btn-primary"}
+*(Psst! ¿Hablas español? Tal vez prefieras ver mi CV):*
 
-[✨ Download CV: English ✨]({{ site.baseurl }}/assets/CV-en.pdf "CV"){:class="btn btn-lg btn-secondary"}
+[✨ Download CV: Spanish ✨]({{ site.baseurl }}/assets/docs/CV-es.pdf "CV"){:class="btn btn-lg btn-primary"}

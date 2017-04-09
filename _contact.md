@@ -4,12 +4,23 @@ title: Contact
 permalink: /contact/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+### I'm here for whatever I need.
+#### So, let's talk!
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+There are many ways to contact me. Here, I include the most important ones:
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+##### Social Networks
+
+Lorem ipsum dolor sit amet.
+
+##### Social Networks
+
+Lorem ipsum dolor sit amet.
+
+##### Social Networks
+
+Lorem ipsum dolor sit amet.
+
+##### IRL
+
+Lorem ipsum dolor sit amet.

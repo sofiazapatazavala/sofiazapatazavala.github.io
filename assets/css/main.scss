@@ -3,6 +3,14 @@
 
 @import "bootstrap";
 
+/*
+  Para después, queda ordenar estos estilos según su uso:
+  1) Para todas las páginas
+  2) Para la portada
+  3) Para el template darks
+  4) Para páginas interiores
+*/
+
 body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, body.page-darks h4, body.page-darks h5, body.page-darks h6  {
   color: $gray-lighter;
 }
@@ -25,4 +33,8 @@ h1.szz-title a {
 .site-footer {
   line-height: 1.2rem;
   border-top: solid 1px #999;
+}
+
+.page-darks span.text-muted {
+  color: #CCC!important;
 }
