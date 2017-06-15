@@ -2,7 +2,7 @@
 layout: post
 title:  "Calibrándome"
 date:   2017-03-02 05:30:00 -0300
-categories: blog
+categories: ['es', 'blog']
 ---
 ![Calibrándome]({{ site.baseurl }}/assets/img/blog/2017-03-calibrate.jpg "Calibrándome")
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /en/about/
 ---
 
 ![Sof]({{ site.baseurl }}/assets/img/sof-full.png "Sof"){:class="float-md-right img-sof"}
@@ -24,4 +24,4 @@ Welcome!
 
 *(Psst! ¿Hablas español? Tal vez prefieras ver mi CV):*
 
-[✨ Download CV: Spanish ✨]({{ site.baseurl }}/assets/docs/CV-es.pdf "CV"){:class="btn btn-lg btn-primary"}
+[✨ CV: Spanish ✨]({{ site.baseurl }}/assets/docs/CV-es.pdf "CV"){:class="btn btn-lg btn-primary"}
