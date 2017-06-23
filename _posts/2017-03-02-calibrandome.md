@@ -4,7 +4,7 @@ title:  "Calibrándome"
 date:   2017-03-02 05:30:00 -0300
 categories: ['es', 'blog']
 ---
-![Calibrándome]({{ site.baseurl }}/assets/img/blog/2017-03-calibrate.jpg "Calibrándome")
+![Calibrándome]({{ site.baseurl }}/blog-images/2017-03-calibrate.jpg "Calibrándome")
 
 Una de las partes ricas de la situación en la que estoy es que estoy extraordinariamente productiva en cuanto a generar mis cambios. Así, me estoy dando cuenta de que en verdad era necesario verbalizar lo que sentía, pedir ayuda, y ver cómo esa ayuda llega porque eso es lo que pasa cuando has hecho lo mismo por otros. De eso se trata todo.
 

@@ -16,17 +16,19 @@
 
   <body class="home">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2 col-xl-1">
+      <div class="row justify-content-center">
+        <div class="col-8">
           {% include header.html %}
         </div>
-        <div class="col pt-3">
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 pt-3">
           <main class="page-content" aria-label="Content">
             <div class="wrapper">
               {{ content }}
               <div class="row">
                 {% for post in site.posts %}
-                <div class="col-md-4">
+                <div class="col-lg-6">
                   <div class="card mb-3">
                     <div class="card-block">
                       <span class="post-meta">{{ post.date | date: "%-d/%b/%Y" }}</span>

@@ -4,7 +4,7 @@ title:  "No me extrañen tanto"
 date:   2017-06-15 13:00:00 -0400
 categories: ['es', 'blog']
 ---
-![v0.2]({{ site.baseurl }}/assets/img/blog/2017-06-playa.jpg "Playa")
+![Playa]({{ site.baseurl }}/blog-images/2017-06-playa.jpg "Playa")
 
 Estoy pensando. Me estoy renovando.
 

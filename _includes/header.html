@@ -1,19 +1,19 @@
       <header class="site-header" role="banner">
         <div class="row">
           <!-- Col que contiene logo -->
-          <div class="col-4 col-sm-2 col-md-12">
+          <div class="col-4 col-sm-2">
             <div class="py-3" style="width: 100%; max-width: 6.75rem; background-color: #eee;">
-              <a href="{{ "/" | relative_url}}"><img src="{{ "/assets/img/logo.svg" | relative_url }}" class="d-block mx-auto my-3" style="max-height: 9.875rem;"></a>
+              <a href="{{ "/" | relative_url}}"><img src="{{ "/assets/img/logo.svg" | relative_url }}" class="d-block mx-auto my-3" style="max-height: 7.5rem;"></a>
             </div>
             <h1 class="h4 my-2 szz-title"><a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h1>
           </div>
           <!-- Col que contiene menú y links a redes -->
-          <div class="col-8 col-sm-10 col-md-12">
+          <div class="col-8 col-sm-10">
             <nav class="nav flex-column">
               <!-- <a class="nav-link pr-0 pr-md-3 pl-md-0 text-right text-md-left" href="http://works.szz.cl/">Portafolio</a> -->
               {% for my_page in site.pages %}
                 {% if my_page.title %}
-                  <a class="nav-link pr-0 pr-md-3 pl-md-0 text-right text-md-left" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                  <a class="nav-link pr-0 pr-md-3 pl-md-0 text-right" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                 {% endif %}
               {% endfor %}
             </nav>
