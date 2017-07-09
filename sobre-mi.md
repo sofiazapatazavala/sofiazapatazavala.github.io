@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /en/about/
-order: 3
+title: Sobre Mí
+permalink: /es/about/
+order: 1
 ---
 
 ![Sof]({{ site.baseurl }}/assets/img/sof-full.png "Sof"){:class="float-md-right img-sof"}

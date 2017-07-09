@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Contact
-permalink: /en/contact/
-order: 4
+title: Contacto
+permalink: /es/contact/
+order: 2
 ---
 
 ### I'm here for whatever I need.

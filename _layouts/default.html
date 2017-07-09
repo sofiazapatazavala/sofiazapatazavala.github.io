@@ -3,13 +3,15 @@
 
   {% include head.html %}
 
-  <body {% if page.title == "About" %} class="page-darks bg-inverse"{% endif %}>
+  <body {% if page.layout == "post" %}class="post"{% endif %}>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2 col-xl-1">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
           {% include header.html %}
         </div>
-        <div class="col">
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 pt-3">
           <main class="page-content" aria-label="Content">
             <div class="wrapper">
               {{ content }}
