@@ -29,6 +29,8 @@ google_analytics: UA-66411703-1
 markdown: kramdown
 theme: minima
 permalink: pretty
+timezone: America/Santiago
+paginate: 4
 gems:
   - jekyll-feed
 exclude:

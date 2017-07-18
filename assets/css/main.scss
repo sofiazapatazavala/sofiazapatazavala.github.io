@@ -1,12 +1,12 @@
 ---
 ---
 
-$brand-primary: #73121B;
+$brand-primary: #3A6474;
 
 @import "bootstrap";
 
 body {
-  background-color: lighten($brand-primary, 70%);
+  background-color: lighten($brand-primary, 60%);
 }
 
 body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, body.page-darks h4, body.page-darks h5, body.page-darks h6  {
@@ -28,10 +28,14 @@ h1.szz-title a {
   color: $gray-lightest;
 }
 
+.manuscrita {
+  font-family: 'Indie Flower', sans-serif;
+}
+
 .container-logo-SZZ {
   width: 100%;
   max-width: 6.75rem;
-  background-color: lighten($brand-primary, 60%);
+  background-color: lighten($brand-primary, 45%);
 }
 .logo-SZZ {
   height: 7rem;

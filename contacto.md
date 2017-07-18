@@ -5,28 +5,26 @@ permalink: /es/contact/
 order: 2
 ---
 
-### I'm here for whatever I need.
-#### So, let's talk!
+### Estoy para lo que necesites.
+#### ¡Hablemos!
 
-There are many ways to contact me. Here, I include the most important ones:
+Hay muchas formas de contactarme. Aquí incluyo las más importantes:
 
 ##### Social Networks
 
-You can find me easily through the social networks I mostly use, [Twitter](https://twitter.com/szapatazavala) and [Instagram](https://instagram.com/sofiazapatazavala).
+Puedes encontrarme fácilmente a través de [Twitter](https://twitter.com/szapatazavala) e [Instagram](https://instagram.com/sofiazapatazavala). Éstas son **cuentas personales**, y serán siempre tratadas como tales.
 
 ##### E-mail
 
-Yup. I have e-mail.
-Yup. I don't have a contact form.
+Sí, tengo mail.
+No, no uso un formulario de contacto.
 
-Send me an email to hola [at] szz [dot] cl. I'll answer, I promise.
+Escríbeme a *hola [arroba] szz [punto] cl*. Responderé, lo prometo.
 
-##### Social Networks
+##### Portafolio
 
-If you're into code, follow me on [Github](https://github.com/sofiazapatazavala) and I'll follow you back. I'd love to share experiences.
+Si te gusta el código, sigámonos en [Github](https://github.com/sofiazapatazavala). Me encantaría compartir experiencias.
 
-##### IRL
+##### En persona
 
-Yeah, sure. Why not? If you plan to come to Santiago, I can be your guide.
-
-*(Psst! ¿Hablas español? Escríbeme igual: hola [arroba] szz [punto] cl)*
+¿Por qué no? Si andas por Santiago, podemos verlo.

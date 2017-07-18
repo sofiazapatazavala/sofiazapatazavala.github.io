@@ -7,22 +7,20 @@ order: 1
 
 ![Sof]({{ site.baseurl }}/assets/img/sof-full.png "Sof"){:class="float-md-right img-sof"}
 
-### I'm a State-of-the-art trans gal.
+### I'm a State-of-the-art Trans Gal.
 
-#### As simple as that.
+#### Tan simple como eso.
 
 &nbsp;
 
-Oh, hey.
+Oh, hola.
 
-In case you were wondering, my name is Sofía. I'm a transgender woman who currently lives in Santiago, Chile. I'm 28, I have a major in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I have a special interest in photography, fashion and politics. As you can see, all of these different interests blend into creating the kind of person that I am.
+Por si te lo preguntabas, mi nombre es Sofía. Soy una mujer transgénero que vive en Santiago, Chile. Tengo 28, una licenciatura en biología y un *minor* en emprendimiento, trabajo como desarrolladora full-stack, y tengo un especial interés en fotografía, moda y política. Como puedes ver, todos estos intereses se mezclan en el tipo de persona que soy.
 
-Since these pieces of text may not be enough for you, you can follow me on [Twitter](https://twitter.com/szapatazavala) & [Instagram](https://instagram.com/sofiazapatazavala) to know me better. And if you need to e-mail me or something, you can always find me on *hola [at] szz [dot] cl*.
+Dado que estas piezas de texto no pueden ser suficientes para ti, puedes seguirme en mis **cuentas personales** de [Twitter](https://twitter.com/szapatazavala) & [Instagram](https://instagram.com/sofiazapatazavala) para conocerme mejor. Estoy actualizando mi portafolio, pero por mientras puedes mirar mi [GitHub](https://github.com/sofiazapatazavala). Y si quieres escribirme, siempre me puedes encontrar en *hola [at] szz [dot] cl*.
 
-Welcome!
+¡Bienvenida!
 
 #### S.
 
-*(Psst! ¿Hablas español? Tal vez prefieras ver mi CV):*
-
-[✨ CV: Spanish ✨]({{ site.baseurl }}/assets/docs/CV-es.pdf "CV"){:class="btn btn-lg btn-primary"}
+[✨ CV: Español ✨]({{ site.baseurl }}/assets/docs/CV-es.pdf "CV"){:class="btn btn-lg btn-primary"}

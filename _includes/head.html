@@ -15,14 +15,16 @@
   <!-- Typekit -->
   <script src="https://use.typekit.net/itp5ugc.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <!-- Tags de Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ site.twitter_username }}" />
   <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta name="twitter:image" content="{{ "/assets/img/logo.png" | absolute_url }}">
   <meta name="twitter:description" content="{{ site.description }}">
-
+  <!-- Tags de Open Graph (Facebook) -->
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.url | absolute_url }}">
