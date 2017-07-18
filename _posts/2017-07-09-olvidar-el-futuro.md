@@ -32,4 +32,4 @@ PS: Con este post también lanzo la **v0.4** de este sitio. Incluye:
 - **Soporte para YouTube**: SÍ. JEKYLL ES ASÍ DE COMPLICADO. Encima, si guardas el sitio en GitHub es peor. Por eso, escribí el include que me permite insertar videos de YouTube (necesario para este post y los que siguen).
 - **Paginación**: Ahora sí puedo escribir 4000 cosas si quiero. Serán 4 artículos por página, y espero ponerme más creativa para componer un lindo archivo.
 
-Ah, y la foto de la nevazón? Porque todas nos liberamos po. Así mismito se siente todo.
+Ah, ¿y la foto de la nevazón? Porque todas nos liberamos esa mañana po. Así mismito se siente todo.
