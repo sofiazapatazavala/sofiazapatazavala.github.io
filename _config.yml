@@ -16,9 +16,9 @@
 title: Sofía Zapata Zavala
 email: hola@szz.cl
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Sofía. I'm a biologist and also a full-stack developer. I love to explore new technologies and mix them to create awesome stuff while figuring what to do with my life... as everyone, I guess? Anyway. Welcome!
+  Hi, I'm Sofía. I'm a biologist and also a full-stack developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://szz.cl # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: szapatazavala
 github_username:  sofiazapatazavala
 instagram_username: sofiazapatazavala
@@ -31,11 +31,8 @@ theme: minima
 permalink: pretty
 timezone: America/Santiago
 paginate: 4
-gems:
+plugins:
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
 repository: "sofiazapatazavala/sofiazapatazavala.github.io"
 sass:
   sass_dir: _sass
