@@ -20,6 +20,26 @@
   {% include head.html %}
 
   <body class="home">
+    {% comment %} Entrada de 100vh con links principales {% endcomment %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col" style="min-height: 100vh;">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              {% include header.html %}
+            </div>
+          </div>
+          <h1 class="display-1 manuscrita text-center">Hey.</h1>
+          <h2 class="text-center">I'm Sofía. And this is my blog. Sort of.</h2>
+          <div class="row">
+            <div class="col justify-content-center" align="center">
+              <button class="btn btn-secondary" type="button" name="button">Blog</button> <button class="btn btn-secondary" type="button" name="button">Portfolio</button> <button class="btn btn-primary" type="button" name="button">Archive: My transition</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% comment %} Feed de 9 artículos {% endcomment %}
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-8">
@@ -37,12 +57,10 @@
                   <div class="card mb-3">
                     {% comment %}{{ post.excerpt }}{% endcomment %}
                     <div class="card-body">
+                      <p class="post-meta">{{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
                       <h2 class="card-title float-left">
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                       </h2>
-                      <div class="float-right">
-                        <p class="post-meta fecha-home manuscrita text-right">{{ post.date | date: "%-d" }}<br>{{ post.date | date: "%b" }}<br>{{ post.date | date: "%Y" }}</p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -69,32 +87,6 @@
         </div>
       </div>
     </div>
-
-    <!-- REVISAR EN#SANTIAGO -->
-
-    <!--
-    <div class="container-fluid" style="height: 60vh; transform: skewY(-3deg); background-color: #9c32a6; z-index: 2000;">
-      <div class="row">
-        <div class="col-md-3 offset-md-8 mt-5 text-md-right" style="transform: skewY(3deg);">
-          <h1 class="p-2 d-inline-block m-0" style="background-color: #ff8000; line-height: 100%; color: #FFF;">HOLA</h1>
-          <h2 class="p-2 d-inline-block m-0" style="background-color: #ff8000; line-height: 100%; color: #FFF;">Pronto necesitaré tu ayuda.</h2>
-        </div>
-      </div>
-    </div
-    -->
-
-    <!--
-      REVISAR EN SANTIAGO para que el posicionamiento no afecte los elementos del footer.
-      Aquí irá (próximamente) el feed de Instagram
-
-    <div class="container-fluid" style="height: 40vh; background-color: #d6451e; top: -2.25rem; z-index: 1000;">
-      <div class="row">
-        <div class="col-md-3 offset-md-8 mt-5">
-          <h1 class="p-1 d-inline-block" style="background-color: #0080ff;">HOLA</h1>
-        </div>
-      </div>
-    </div>
-    -->
 
     {% include footer.html %}
 

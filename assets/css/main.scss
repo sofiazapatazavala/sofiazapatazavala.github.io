@@ -66,3 +66,8 @@ h1.szz-title a {
 .page-darks span.text-muted {
   color: $gray-200!important;
 }
+
+.nav-szz li:nth-of-type(2) {
+  border-right: solid 1px $brand-primary;
+  margin-right: 1rem!important;
+}
