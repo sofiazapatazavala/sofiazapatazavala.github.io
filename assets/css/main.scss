@@ -2,7 +2,7 @@
 ---
 
 /* Los colores ahora se tienen que cambiar según el nuevo sistema de Bootstrap */
-$brand-primary: #74347A;
+$brand-primary: #5F4B8B;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -12,7 +12,7 @@ $theme-colors: map-merge((
 @import "bootstrap";
 
 body {
-  background-color: lighten($brand-primary, 60%);
+
 }
 
 body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, body.page-darks h4, body.page-darks h5, body.page-darks h6  {

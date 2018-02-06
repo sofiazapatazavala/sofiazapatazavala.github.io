@@ -1,13 +1,15 @@
 <!--
   ¡Hola! Gracias por presionar Ctrl+U.
 
-  No hay nada del otro mundo. Este sitio está hecho en Jekyll 3.5, con Bootstrap 4 como base, y alojado en GitHub Pages. Como tiene que ser. Haz click en "trabajos" (cuando esté, oops) para los últimos trabajos, y si quieres contactarme mándame un e-mail a hola [arroba] szz [punto] cl.
+  Este sitio está hecho en Jekyll 3.5, basado en Bootstrap 4, y alojado en GitHub Pages. Como tiene que ser. Si quieres contactarme mándame un e-mail a hola [arroba] szz [punto] cl.
 
   -
 
   Hi! Thanks for pressing Ctrl+U.
 
-  There isn't anything special. This site is made with Jekyll 3.5, using Bootstrap 4 as a framework and hosted on GitHub Pages. As it should be. Click (when available, oops) on Works to check my last projects, and if you want to say hi, just email me: hola [at] szz [dot] cl.
+  This site is made with Jekyll 3.5, based on Bootstrap 4 and hosted on GitHub Pages. As it should be. If you want to say hi or something, just email me: hola [at] szz [dot] cl.
+
+  -
 
   S.
 
@@ -31,12 +33,12 @@
               {{ content }}
               <div class="row">
                 {% for post in paginator.posts %}
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="card mb-3">
-                    {{ post.excerpt }}
+                    {% comment %}{{ post.excerpt }}{% endcomment %}
                     <div class="card-body">
                       <h2 class="card-title float-left">
-                        <a class="post-link manuscrita" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                       </h2>
                       <div class="float-right">
                         <p class="post-meta fecha-home manuscrita text-right">{{ post.date | date: "%-d" }}<br>{{ post.date | date: "%b" }}<br>{{ post.date | date: "%Y" }}</p>

@@ -10,7 +10,7 @@ order: 2
 
 Hay muchas formas de contactarme. Aquí incluyo las más importantes:
 
-##### Social Networks
+##### Redes sociales
 
 Puedes encontrarme fácilmente a través de [Twitter](https://twitter.com/szapatazavala) e [Instagram](https://instagram.com/sofiazapatazavala). Éstas son **cuentas personales**, y serán siempre tratadas como tales.
 
