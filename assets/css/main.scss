@@ -67,7 +67,9 @@ h1.szz-title a {
   color: $gray-200!important;
 }
 
-.nav-szz li:nth-of-type(2) {
-  border-right: solid 1px $brand-primary;
-  margin-right: 1rem!important;
+@media (min-width: 768px) {
+  .nav-szz li:nth-of-type(2), .nav-szz li:nth-of-type(4)  {
+    border-right: solid 1px $brand-primary;
+    margin-right: 1rem!important;
+  }
 }

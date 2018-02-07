@@ -16,7 +16,7 @@
 title: Sofía Zapata Zavala
 email: hola@szz.cl
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Sofía. I'm a biologist and also a full-stack developer.
+  Hi, I'm Sofía. I'm a biologist, a full-stack developer, an activist, a (soon to be) data scientist and a fashionista.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://szz.cl # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: szapatazavala
