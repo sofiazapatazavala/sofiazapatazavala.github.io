@@ -1,10 +1,15 @@
 <!--
+  ¡Hola! Gracias por presionar Ctrl+U.
+
+  Este sitio está hecho en Jekyll 3.5, basado en Bootstrap 4, y alojado en GitHub Pages. Como tiene que ser. Si quieres contactarme mándame un e-mail a hola [arroba] szz [punto] cl.
+
+  -
 
   Hi! Thanks for pressing Ctrl+U.
 
-  Take a look at this code. This is my first Jekyll theme, and it's also using cutting-edge technology. I'm currently using a version of Bootstrap 4 compiled from the Sass files, and I'll be adding new HTML+CSS+JS technologies as I learn & practice with them.
-  This website is hosted with GitHub Pages. For other works, take a loot at my GitHub page or my "Works" page.
-  For any other questions, please email me: hola [at] szz [dot] cl.
+  This site is made with Jekyll 3.5, based on Bootstrap 4 and hosted on GitHub Pages. As it should be. If you want to say hi or something, just email me: hola [at] szz [dot] cl.
+
+  -
 
   S.
 
@@ -15,6 +20,49 @@
   {% include head.html %}
 
   <body class="home">
+    {% comment %} Entrada de 100vh con links principales {% endcomment %}
+    {% comment %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col" style="min-height: 100vh;">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              {% include header.html %}
+            </div>
+          </div>
+          <h1 class="display-1 manuscrita text-center">Hey.</h1>
+          <h2 class="text-center">I'm Sofía. And this is my site.</h2>
+          <div class="row">
+            <div class="col justify-content-center" align="center">
+              <button class="btn btn-secondary" type="button" name="button">Blog</button> <button class="btn btn-secondary" type="button" name="button">Portfolio</button> <button class="btn btn-primary" type="button" name="button">Archive: My transition</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
+              <svg version="1.1"
+              	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+              	 x="0px" y="0px" width="177px" height="28px" viewBox="0 0 177 28" style="enable-background:new 0 0 177 28;"
+              	 xml:space="preserve" class="d-block mx-auto mt-5">
+              <style type="text/css">
+              	.st0{fill:none;stroke:#CCC;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+              </style>
+              <defs>
+              </defs>
+              <g>
+              	<line class="st0" x1="2.5" y1="2.5" x2="88.5" y2="25.5"/>
+              </g>
+              <g>
+              	<line class="st0" x1="174.5" y1="2.5" x2="88.5" y2="25.5"/>
+              </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endcomment %}
+    {% comment %} Feed de 9 artículos {% endcomment %}
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-8">
@@ -28,20 +76,20 @@
               {{ content }}
               <div class="row">
                 {% for post in paginator.posts %}
-                <div class="col-lg-6">
-                  <div class="card mb-3">
-                    <div class="card-block">
-                      <span class="post-meta">{{ post.date | date: "%-d/%b/%Y" }}</span>
-                      {{ post.excerpt }}
-                      <h3>
+                <div class="col-lg-4 borde-columna">
+                  <div class="my-3">
+                    {% comment %}{{ post.excerpt }}{% endcomment %}
+                    <div class="body">
+                      <p class="post-meta">{{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
+                      <h2 class="title">
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                      </h3>
+                      </h2>
                     </div>
                   </div>
                 </div>
                 {% endfor %}
               </div>
-              <p class="rss-subscribe">Puedes suscribirte también <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>.</p>
+              {%comment %}<p class="rss-subscribe">Puedes suscribirte también <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>.</p>{% endcomment %}
             </div>
           </main>
         </div>
@@ -49,7 +97,7 @@
       <div class="row justify-content-center">
         <div class="col-md-2">
           {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="btn btn-secondary" role="button">⬅</a>
+            <a href="{{ paginator.previous_page_path }}" class="btn btn-primary" role="button">⬅</a>
           {% endif %}
         </div>
         <div class="col-md-4 pt-3 text-center">
@@ -57,37 +105,11 @@
         </div>
         <div class="col-md-2 pt-3 text-right">
           {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="btn btn-secondary" role="button">➡</a>
+            <a href="{{ paginator.next_page_path }}" class="btn btn-primary" role="button">➡</a>
           {% endif %}
         </div>
       </div>
     </div>
-
-    <!-- REVISAR EN#SANTIAGO -->
-
-    <!--
-    <div class="container-fluid" style="height: 60vh; transform: skewY(-3deg); background-color: #9c32a6; z-index: 2000;">
-      <div class="row">
-        <div class="col-md-3 offset-md-8 mt-5 text-md-right" style="transform: skewY(3deg);">
-          <h1 class="p-2 d-inline-block m-0" style="background-color: #ff8000; line-height: 100%; color: #FFF;">HOLA</h1>
-          <h2 class="p-2 d-inline-block m-0" style="background-color: #ff8000; line-height: 100%; color: #FFF;">Pronto necesitaré tu ayuda.</h2>
-        </div>
-      </div>
-    </div
-    -->
-
-    <!--
-      REVISAR EN SANTIAGO para que el posicionamiento no afecte los elementos del footer.
-      Aquí irá (próximamente) el feed de Instagram
-
-    <div class="container-fluid" style="height: 40vh; background-color: #d6451e; top: -2.25rem; z-index: 1000;">
-      <div class="row">
-        <div class="col-md-3 offset-md-8 mt-5">
-          <h1 class="p-1 d-inline-block" style="background-color: #0080ff;">HOLA</h1>
-        </div>
-      </div>
-    </div>
-    -->
 
     {% include footer.html %}
 

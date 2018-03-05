@@ -7,17 +7,17 @@ order: 3
 
 ![Sof]({{ site.baseurl }}/assets/img/sof-full.png "Sof"){:class="float-md-right img-sof"}
 
-### I'm a State-of-the-art trans gal.
+### Hi.
 
-#### As simple as that.
+#### I'm Sofía.
 
 &nbsp;
 
-Oh, hey.
+I usually define myself as a *state-of-the-art trans gal*. But, what does it mean?
 
-In case you were wondering, my name is Sofía. I'm a transgender woman who currently lives in Santiago, Chile. I'm 28, I have a major in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I have a special interest in photography, fashion and politics. As you can see, all of these different interests blend into creating the kind of person that I am.
+Let me tell you: I'm a transgender woman who currently lives in Santiago, Chile. I'm 29, I have a BSc in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I also have a special interest in photography, fashion and politics. That kind of interests make me a very particular person. But mostly, I like to have the opportunity to share with and for the world.
 
-Since these pieces of text may not be enough for you, you can follow me on [Twitter](https://twitter.com/szapatazavala) & [Instagram](https://instagram.com/sofiazapatazavala) to know me better. And if you need to e-mail me or something, you can always find me on *hola [at] szz [dot] cl*.
+If you want to know about my everyday stuff, you can follow me on [Twitter](https://twitter.com/szapatazavala) & [Instagram](https://instagram.com/sofiazapatazavala). Some of my recent works are available on  [GitHub](https://github.com/sofiazapatazavala). And if you want to write me, find me on **hola [at] szz [dot] cl**.
 
 Welcome!
 

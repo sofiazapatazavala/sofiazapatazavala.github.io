@@ -1,16 +1,22 @@
 ---
 ---
 
-$brand-primary: #3A6474;
+/* Los colores ahora se tienen que cambiar según el nuevo sistema de Bootstrap */
+$brand-primary: #5F4B8B;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "primary": $brand-primary
+), $theme-colors);
 
 @import "bootstrap";
 
 body {
-  background-color: lighten($brand-primary, 60%);
+
 }
 
 body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, body.page-darks h4, body.page-darks h5, body.page-darks h6  {
-  color: $gray-lighter;
+  color: $gray-200;
 }
 
 h1.szz-title {
@@ -20,16 +26,22 @@ h1.szz-title {
 
 h1.szz-title a {
   text-decoration: none;
-  color: $gray;
+  color: $gray-700;
   display: table-caption;
 }
 
 .page-darks h1.szz-title a, .page-darks h1.post-title {
-  color: $gray-lightest;
+  color: $gray-200;
 }
 
 .manuscrita {
   font-family: 'Indie Flower', sans-serif;
+}
+.post-meta {
+  line-height: 85%;
+}
+.fecha-home {
+  font-size: 21px;
 }
 
 .container-logo-SZZ {
@@ -44,13 +56,32 @@ h1.szz-title a {
 .site-footer {
   line-height: 1.2rem;
   border-top: solid 1px #999;
-  background-color: $gray-lighter;
+  background-color: $gray-200;
 }
 
 .site-footer p {
-  color: $gray!important;
+  color: $gray-700!important;
 }
 
 .page-darks span.text-muted {
-  color: $gray-light!important;
+  color: $gray-200!important;
+}
+
+@media (min-width: 768px) {
+  .nav-szz li:nth-of-type(2), .nav-szz li:nth-of-type(4)  {
+    border-right: solid 1px $brand-primary;
+    margin-right: 1rem!important;
+  }
+}
+
+/* Estilos para cada página */
+.borde-columna {
+  border-bottom: solid 1px $brand-primary;
+  border-right:  solid 1px $brand-primary;
+}
+.borde-columna:nth-of-type(7), .borde-columna:nth-of-type(8), .borde-columna:nth-of-type(9) {
+  border-bottom: none;
+}
+.borde-columna:nth-of-type(3), .borde-columna:nth-of-type(6), .borde-columna:nth-of-type(9) {
+  border-right: none;
 }
