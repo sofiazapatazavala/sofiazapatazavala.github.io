@@ -21,6 +21,7 @@
 
   <body class="home">
     {% comment %} Entrada de 100vh con links principales {% endcomment %}
+    {% comment %}
     <div class="container-fluid">
       <div class="row">
         <div class="col" style="min-height: 100vh;">
@@ -30,7 +31,7 @@
             </div>
           </div>
           <h1 class="display-1 manuscrita text-center">Hey.</h1>
-          <h2 class="text-center">I'm Sofía. And this is my blog. Sort of.</h2>
+          <h2 class="text-center">I'm Sofía. And this is my site.</h2>
           <div class="row">
             <div class="col justify-content-center" align="center">
               <button class="btn btn-secondary" type="button" name="button">Blog</button> <button class="btn btn-secondary" type="button" name="button">Portfolio</button> <button class="btn btn-primary" type="button" name="button">Archive: My transition</button>
@@ -42,9 +43,9 @@
               <svg version="1.1"
               	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
               	 x="0px" y="0px" width="177px" height="28px" viewBox="0 0 177 28" style="enable-background:new 0 0 177 28;"
-              	 xml:space="preserve">
+              	 xml:space="preserve" class="d-block mx-auto mt-5">
               <style type="text/css">
-              	.st0{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+              	.st0{fill:none;stroke:#CCC;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
               </style>
               <defs>
               </defs>
@@ -60,6 +61,7 @@
         </div>
       </div>
     </div>
+    {% endcomment %}
     {% comment %} Feed de 9 artículos {% endcomment %}
     <div class="container-fluid">
       <div class="row justify-content-center">
@@ -74,12 +76,12 @@
               {{ content }}
               <div class="row">
                 {% for post in paginator.posts %}
-                <div class="col-lg-4">
-                  <div class="card mb-3">
+                <div class="col-lg-4 borde-columna">
+                  <div class="my-3">
                     {% comment %}{{ post.excerpt }}{% endcomment %}
-                    <div class="card-body">
+                    <div class="body">
                       <p class="post-meta">{{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
-                      <h2 class="card-title float-left">
+                      <h2 class="title">
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                       </h2>
                     </div>
@@ -87,7 +89,7 @@
                 </div>
                 {% endfor %}
               </div>
-              <p class="rss-subscribe">Puedes suscribirte también <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>.</p>
+              {%comment %}<p class="rss-subscribe">Puedes suscribirte también <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>.</p>{% endcomment %}
             </div>
           </main>
         </div>

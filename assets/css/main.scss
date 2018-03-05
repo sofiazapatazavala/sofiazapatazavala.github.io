@@ -73,3 +73,15 @@ h1.szz-title a {
     margin-right: 1rem!important;
   }
 }
+
+/* Estilos para cada página */
+.borde-columna {
+  border-bottom: solid 1px $brand-primary;
+  border-right:  solid 1px $brand-primary;
+}
+.borde-columna:nth-of-type(7), .borde-columna:nth-of-type(8), .borde-columna:nth-of-type(9) {
+  border-bottom: none;
+}
+.borde-columna:nth-of-type(3), .borde-columna:nth-of-type(6), .borde-columna:nth-of-type(9) {
+  border-right: none;
+}

@@ -27,6 +27,6 @@ If you're into code, follow me on [Github](https://github.com/sofiazapatazavala)
 
 ##### IRL
 
-Yeah, sure. Why not? If you plan to come to Santiago, I can be your guide.
+Yeah, sure. Why not? If you plan to come to Santiago, let me show you the city.
 
 *(Psst! ¿Hablas español? Escríbeme igual: hola [arroba] szz [punto] cl)*
