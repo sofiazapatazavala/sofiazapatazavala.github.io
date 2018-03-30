@@ -21,7 +21,7 @@ gem "minima", "~> 2.0"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 
 # Nota SZZ: Está en la versión 163 porque no puedo resolver el tema del tema remoto.
-gem "github-pages", "163", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
