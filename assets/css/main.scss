@@ -67,21 +67,35 @@ h1.szz-title a {
   color: $gray-200!important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .nav-szz li:nth-of-type(2), .nav-szz li:nth-of-type(4)  {
     border-right: solid 1px $brand-primary;
     margin-right: 1rem!important;
   }
 }
 
-/* Estilos para cada página */
-.borde-columna {
-  border-bottom: solid 1px $brand-primary;
-  border-right:  solid 1px $brand-primary;
+/* Portada: Bordes para separar textos */
+.odd.borde-columna, .even.borde-columna {
+  border-bottom: dashed 1px $brand-primary;
 }
-.borde-columna:nth-of-type(7), .borde-columna:nth-of-type(8), .borde-columna:nth-of-type(9) {
-  border-bottom: none;
+
+@media (min-width: 992px) {
+  .odd.borde-columna {
+  border-right: dashed 1px $brand-primary;
+  }
 }
-.borde-columna:nth-of-type(3), .borde-columna:nth-of-type(6), .borde-columna:nth-of-type(9) {
-  border-right: none;
+
+div.es p.fecha::before {
+  content: "🇨🇱 "
+}
+
+
+div.en p.fecha::before {
+  content: "🇬🇧 "
+}
+
+@media (min-width: 992px) {
+  div.es p.fecha::before, div.en p.fecha::before {
+    content: none;
+  }
 }

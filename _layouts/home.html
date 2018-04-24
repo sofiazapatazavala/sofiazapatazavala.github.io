@@ -71,12 +71,18 @@
             <div class="wrapper">
               {{ content }}
               <div class="row">
+                <div class="col-lg-6 d-none d-lg-block">
+                  <p class="text-right">⬇ 🇨🇱</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                  <p>🇬🇧 ⬇</p>
+                </div>
                 {% for post in paginator.posts %}
-                <div class="col-lg-6 borde-columna">
+                <div class="{% cycle 'odd','even' %} {% cycle 'es','en' %} col-lg-6 borde-columna">
                   <div class="my-3">
                     {{ post.excerpt }}
                     <div class="body">
-                      <p class="post-meta">{{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
+                      <p class="post-meta fecha">{{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
                       <h2 class="title">
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                       </h2>
