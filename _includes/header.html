@@ -12,11 +12,14 @@
           <!-- Col que contiene menú y links a redes -->
           <div class="col-6 col-sm-8 align-self-end">
             <nav class="nav nav-szz flex-column flex-xl-row py-3">
+
               {% assign sorted_pages = site.pages | sort:"order" %}
               {% for node in sorted_pages %}
+              {% unless node.exclude %}
                 {% if node.title %}
                   <li><a class="nav-link pr-0 pr-md-3 pl-md-0 text-right text-xl-left" href="{{ node.url | relative_url }}">{{ node.title | escape }}</a></li>
                 {% endif %}
+              {% endunless %}
               {% endfor %}
               <form class="form-inline">
                 <a class="btn btn-outline-primary" href="http://works.szz.cl/" role="button">Portfolio</a>

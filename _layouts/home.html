@@ -1,15 +1,11 @@
 <!--
   ¡Hola! Gracias por presionar Ctrl+U.
 
-  Este sitio está hecho en Jekyll 3.5, basado en Bootstrap 4, y alojado en GitHub Pages. Como tiene que ser. Si quieres contactarme mándame un e-mail a hola [arroba] szz [punto] cl.
-
-  -
-
+  Este sitio está hecho con la última versión de Jekyll, Bootstrap 4.1, y alojamiento en GitHub Pages. Como tiene que ser. Si quieres contactarme mándame un e-mail a hola [arroba] szz [punto] cl.
+  *******
   Hi! Thanks for pressing Ctrl+U.
 
-  This site is made with Jekyll 3.5, based on Bootstrap 4 and hosted on GitHub Pages. As it should be. If you want to say hi or something, just email me: hola [at] szz [dot] cl.
-
-  -
+  This site is made with the latest Jekyll, Bootstrap 4.1, and hosted on GitHub Pages. As it should be. If you want to say hi or something, just email me: hola [at] szz [dot] cl.
 
   S.
 
@@ -20,7 +16,7 @@
   {% include head.html %}
 
   <body class="home">
-    {% comment %} Entrada de 100vh con links principales {% endcomment %}
+    {% comment %} Entrada de 100vh con links principales / SERÁ MOVIDA DE AQUÍ EN LA ALPHA 3 {% endcomment %}
     {% comment %}
     <div class="container-fluid">
       <div class="row">
@@ -62,25 +58,57 @@
       </div>
     </div>
     {% endcomment %}
-    {% comment %} Feed de 9 artículos {% endcomment %}
+    {% comment %} Feed de 8 artículos {% endcomment %}
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-8">
           {% include header.html %}
         </div>
       </div>
+
+      {% comment %}Línea del about {% endcomment %}
+      {% comment %}
+      <div class="row justify-content-center">
+          <div class="col-md-8 pt-3">
+            <div class="row">
+              <div class="col-md align-self-end order-first order-md-2">
+                <p class="text-center">⬅◀ 🇨🇱 | 🇬🇧 ▶➡</p>
+                <object type="image/svg+xml" data="{{ site.baseurl }}/assets/img/silueta-color.svg" class="logo">
+                </object>
+              </div>
+              <div class="col-md order-md-1">
+                <p class="text-right">⬇ 🇨🇱</p>
+                <h2 class="text-right">Sobre Mí</h2>
+                <p class="text-justify">Soy una mujer transgénero que vive en Santiago, Chile. Tengo 29 años, una licenciatura en biología, y un *minor* en emprendimiento; trabajo como desarrolladora full-stack, y tengo un especial interés en fotografía, moda y política. Pero más que nada, lo que me gusta es tener la oportunidad de compartir con el mundo y para el mundo.</p>
+              </div>
+              <div class="col-md order-md-3">
+                <p>🇬🇧 ⬇</p>
+                <h2>About Me</h2>
+                <p class="text-justify">I'm a transgender woman who currently lives in Santiago, Chile. I'm 29, I have a BSc in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I also have a special interest in photography, fashion and politics. But mostly, I like to have the opportunity to share with and for the world.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      {% endcomment %}
+
       <div class="row justify-content-center">
         <div class="col-md-8 pt-3">
           <main class="page-content" aria-label="Content">
             <div class="wrapper">
               {{ content }}
               <div class="row">
+                <div class="col-lg-6 d-none d-lg-block">
+                  <p class="text-right">⬇ 🇨🇱</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                  <p>🇬🇧 ⬇</p>
+                </div>
                 {% for post in paginator.posts %}
-                <div class="col-lg-4 borde-columna">
+                <div class="{% cycle 'odd','even' %} {% cycle 'es','en' %} col-lg-6 borde-columna">
                   <div class="my-3">
-                    {% comment %}{{ post.excerpt }}{% endcomment %}
+                    {{ post.excerpt }}
                     <div class="body">
-                      <p class="post-meta">{{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
+                      <p class="post-meta fecha">{{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
                       <h2 class="title">
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                       </h2>
@@ -89,7 +117,7 @@
                 </div>
                 {% endfor %}
               </div>
-              {%comment %}<p class="rss-subscribe">Puedes suscribirte también <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>.</p>{% endcomment %}
+              {% comment %}<p class="rss-subscribe my-3">Remember to use <a href="{{ "/feed.xml" | relative_url }}">RSS</a> to be safe about companies stealing your data.</p>{% endcomment %}
             </div>
           </main>
         </div>
