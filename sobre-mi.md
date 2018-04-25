@@ -5,7 +5,7 @@ permalink: /es/about/
 order: 1
 ---
 
-![Sof]({{ site.baseurl }}/___assets/img/sof-full.png "Sof"){:class="float-md-right img-sof"}
+![Sof]({{ site.baseurl }}/assets/img/silueta-color.svg "Sof"){:class="float-md-right img-sof"}
 
 ### Hola.
 

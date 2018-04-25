@@ -2,6 +2,7 @@
 layout: slideshow
 title: Ser / Being
 permalink: /serlaSofi/
+exclude: true
 order: 5
 ---
 

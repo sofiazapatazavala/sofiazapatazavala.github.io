@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Contact
-permalink: /en/contact/
+title: Changelog
+permalink: /changelog/
+exclude: true
 order: 6
 ---
 
