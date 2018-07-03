@@ -3,6 +3,7 @@ layout: page
 title: Contact
 permalink: /en/contact/
 order: 4
+exclude: true
 ---
 
 ### I'm here for whatever I need.

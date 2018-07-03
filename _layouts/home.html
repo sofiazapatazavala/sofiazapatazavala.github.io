@@ -16,48 +16,6 @@
   {% include head.html %}
 
   <body class="home">
-    {% comment %} Entrada de 100vh con links principales / SERÁ MOVIDA DE AQUÍ EN LA ALPHA 3 {% endcomment %}
-    {% comment %}
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col" style="min-height: 100vh;">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              {% include header.html %}
-            </div>
-          </div>
-          <h1 class="display-1 manuscrita text-center">Hey.</h1>
-          <h2 class="text-center">I'm Sofía. And this is my site.</h2>
-          <div class="row">
-            <div class="col justify-content-center" align="center">
-              <button class="btn btn-secondary" type="button" name="button">Blog</button> <button class="btn btn-secondary" type="button" name="button">Portfolio</button> <button class="btn btn-primary" type="button" name="button">Archive: My transition</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
-              <svg version="1.1"
-              	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-              	 x="0px" y="0px" width="177px" height="28px" viewBox="0 0 177 28" style="enable-background:new 0 0 177 28;"
-              	 xml:space="preserve" class="d-block mx-auto mt-5">
-              <style type="text/css">
-              	.st0{fill:none;stroke:#CCC;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
-              </style>
-              <defs>
-              </defs>
-              <g>
-              	<line class="st0" x1="2.5" y1="2.5" x2="88.5" y2="25.5"/>
-              </g>
-              <g>
-              	<line class="st0" x1="174.5" y1="2.5" x2="88.5" y2="25.5"/>
-              </g>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endcomment %}
     {% comment %} Feed de 8 artículos {% endcomment %}
     <div class="container-fluid">
       <div class="row justify-content-center">
@@ -70,20 +28,19 @@
       <div class="row justify-content-center">
           <div class="col-md-8 pt-3">
             <div class="row">
-              <div class="col-md align-self-end order-first order-md-2">
-                <p class="text-center">⬅◀ 🇨🇱 | 🇬🇧 ▶➡</p>
-                <object type="image/svg+xml" data="{{ site.baseurl }}/assets/img/silueta-color.svg" class="logo">
+              <div class="col-lg align-self-end order-first order-lg-2">
+                <object type="image/svg+xml" data="{{ site.baseurl }}/assets/img/silueta-color.svg" class="silueta">
                 </object>
               </div>
-              <div class="col-md order-md-1">
-                <p class="text-right">⬇ 🇨🇱</p>
-                <h2 class="text-right">Sobre Mí</h2>
-                <p class="text-justify">Soy una mujer transgénero que vive en Santiago, Chile. Tengo 29 años, una licenciatura en biología, y un *minor* en emprendimiento; trabajo como desarrolladora full-stack, y tengo un especial interés en fotografía, moda y política. Pero más que nada, lo que me gusta es tener la oportunidad de compartir con el mundo y para el mundo.</p>
+              <div class="col-lg order-lg-1">
+                <p>⬇ 🇨🇱</p>
+                <h2 class="text-lg-right">Sobre Mí</h2>
+                <p class="text-justify">Soy una mujer transgénero que vive en Santiago, Chile. Tengo 29 años, una licenciatura en biología, y un <em>minor</em> en emprendimiento; trabajo como desarrolladora full-stack, y tengo un especial interés en fotografía, moda y política. Pero más que nada, me gusta tener la oportunidad de compartirme con, y para el mundo.</p>
               </div>
-              <div class="col-md order-md-3">
-                <p>🇬🇧 ⬇</p>
+              <div class="col-lg order-lg-3">
+                <p class="text-lg-right"><span class="d-lg-none">⬇ </span>🇬🇧<span class="d-none d-lg-inline"> ⬇</span></p>
                 <h2>About Me</h2>
-                <p class="text-justify">I'm a transgender woman who currently lives in Santiago, Chile. I'm 29, I have a BSc in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I also have a special interest in photography, fashion and politics. But mostly, I like to have the opportunity to share with and for the world.</p>
+                <p class="text-justify">I'm a transgender woman who currently lives in Santiago, Chile. I'm 29, I have a BSc in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I also have a special interest in photography, fashion and politics. But most of all, I like to have the opportunity to share myself with and for the world.</p>
               </div>
             </div>
           </div>
@@ -95,18 +52,12 @@
             <div class="wrapper">
               {{ content }}
               <div class="row">
-                <div class="col-lg-6 d-none d-lg-block">
-                  <p class="text-right">⬇ 🇨🇱</p>
-                </div>
-                <div class="col-lg-6 d-none d-lg-block">
-                  <p>🇬🇧 ⬇</p>
-                </div>
                 {% for post in paginator.posts %}
                 <div class="{% cycle 'odd','even' %} {% cycle 'es','en' %} col-lg-6 borde-columna">
                   <div class="my-3">
                     {{ post.excerpt }}
                     <div class="body">
-                      <p class="post-meta fecha">{{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
+                      <p class="post-meta fecha"><span class="cl">🇨🇱</span><span class="gb">🇬🇧</span> {{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
                       <h2 class="title">
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                       </h2>

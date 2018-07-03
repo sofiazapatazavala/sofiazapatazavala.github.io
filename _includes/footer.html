@@ -1,4 +1,4 @@
-<footer class="site-footer mt-5 pt-1 pb-5">
+<footer class="site-footer mt-3 pt-1 pb-5">
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-md-4">
@@ -7,7 +7,7 @@
       </div>
       <div class="col-md-4">
         {% assign pride = false %}
-        <p class="text-center text-md-right small">Made with{% if pride == true %} ❤🧡💛💚💙💜 {% else %} 🖤 {% endif %} from Santiago,<br>using <a href="http://jekyllrb.com/">Jekyll</a>. <a href="http://semver.org/">version</a> <strong>1.0-alpha.3.</strong><br>Last generated: {{ site.time }}.<br>Build: {{ site.github.build_revision }}.</p>
+        <p class="text-center text-md-right small">Made with{% if pride == true %} ❤🧡💛💚💙💜 {% else %} 🖤 {% endif %} from Santiago,<br>using <a href="http://jekyllrb.com/">Jekyll</a>. {% comment %}<a href="{{ site.baseurl }}/changelog">version 1.0-<strong>beta</strong></a>{% endcomment %}.<br>Last generated: {{ site.time }}.<br>Build: {{ site.github.build_revision }}.</p>
       </div>
     </div>
   </div>
