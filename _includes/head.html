@@ -6,11 +6,13 @@
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <!-- <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}"> -->
-
+  <!-- CSS y RSS -->
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <!-- Twemoji -->
+  <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
 
   <!-- Typekit -->
   <script src="https://use.typekit.net/itp5ugc.js"></script>

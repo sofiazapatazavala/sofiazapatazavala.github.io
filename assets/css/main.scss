@@ -3,6 +3,7 @@
 
 /* Los colores ahora se tienen que cambiar según el nuevo sistema de Bootstrap */
 $brand-primary: #5F4B8B;
+$rosado: #f0a1bf;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -12,7 +13,7 @@ $theme-colors: map-merge((
 @import "bootstrap";
 
 body {
-
+  background: #f2f2f2;
 }
 
 body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, body.page-darks h4, body.page-darks h5, body.page-darks h6  {
@@ -28,6 +29,14 @@ h1.szz-title a {
   text-decoration: none;
   color: $gray-700;
   display: table-caption;
+}
+
+img.emoji {
+// Override any img styles to ensure Emojis are displayed inline
+  margin: 0px !important;
+  display: inline !important;
+  width: 1.5rem;
+  height: auto;
 }
 
 .page-darks h1.szz-title a, .page-darks h1.post-title {
@@ -47,7 +56,7 @@ h1.szz-title a {
 .container-logo-SZZ {
   width: 100%;
   max-width: 6.75rem;
-  background-color: lighten($brand-primary, 45%);
+  background-color: lighten($brand-primary, 35%);
 }
 .logo-SZZ {
   height: 7rem;
@@ -85,18 +94,13 @@ h1.szz-title a {
   }
 }
 
-div.es p.fecha::before {
-  content: "🇨🇱 "
-}
-
-
-div.en p.fecha::before {
-  content: "🇬🇧 "
+div.es span.gb, div.en span.cl {
+  display: none;
 }
 
 @media (min-width: 992px) {
-  div.es p.fecha::before, div.en p.fecha::before {
-    content: none;
+  span.cl, span.gb {
+    display: none;
   }
 }
 

@@ -3,6 +3,7 @@ layout: page
 title: Contacto
 permalink: /es/contact/
 order: 2
+exclude: true
 ---
 
 ### Estoy para lo que necesites.

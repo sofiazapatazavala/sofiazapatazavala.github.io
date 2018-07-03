@@ -3,6 +3,7 @@ layout: page
 title: Sobre Mí
 permalink: /es/about/
 order: 1
+exclude: true
 ---
 
 ![Sof]({{ site.baseurl }}/assets/img/silueta-color.svg "Sof"){:class="float-md-right img-sof"}
