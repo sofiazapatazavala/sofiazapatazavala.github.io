@@ -31,6 +31,10 @@ h1.szz-title a {
   display: table-caption;
 }
 
+img {
+  image-orientation: from-image;
+}
+
 img.emoji {
 // Override any img styles to ensure Emojis are displayed inline
   margin: 0px !important;
