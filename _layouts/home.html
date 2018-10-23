@@ -16,6 +16,10 @@
   {% include head.html %}
 
   <body class="home">
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include gtm-noscript.html %}
+    {% endif %}
+
     {% comment %} Feed de 8 artículos {% endcomment %}
     <div class="container-fluid">
       <div class="row justify-content-center">
