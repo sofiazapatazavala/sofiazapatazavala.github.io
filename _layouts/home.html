@@ -1,17 +1,30 @@
 <!--
-  ¡Hola! Gracias por presionar Ctrl+U.
 
-  Este sitio está hecho con la última versión de Jekyll, Bootstrap 4.1, y alojamiento en GitHub Pages. Como tiene que ser. Si quieres contactarme mándame un e-mail a hola [arroba] szz [punto] cl.
-  *******
-  Hi! Thanks for pressing Ctrl+U.
+  Hola.
 
-  This site is made with the latest Jekyll, Bootstrap 4.1, and hosted on GitHub Pages. As it should be. If you want to say hi or something, just email me: hola [at] szz [dot] cl.
+  Si estás buscando algo espectacular aquí, puedo decepcionarte o sorprenderte. No sé. El sitio está hecho con Jekyll, es solamente Bootstrap y jQuery que he programado, y está alojado en GitHub Pages.
+
+  Simple, ¿no? Es que me gusta el código que se pueda leer fácilmente. Y solo quiero escribir.
+
+  Ponme a prueba escribiéndome a hola [arroba] szz [punto] cl.
+
+  S.
+
+  ---
+
+  Hi.
+
+  If you're looking for something spectacular here, I may disappoint you or amaze you. I don't know. The site is powered by Jekyll, is made with Bootstrap and some jQuery I coded, and it's hosted on GitHub Pages.
+
+  Simple, isn't it? I like the code that can be easily read. And I just want to write.
+
+  Try me by sending me an email to hola [at] szz [dot] cl.
 
   S.
 
 -->
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">{% comment %}Cambiar a es-CL y ver traducciones.{% endcomment %}
 
   {% include head.html %}
 
@@ -58,7 +71,7 @@
       <div class="row justify-content-center">
         <div class="col-md-2">
           {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="btn btn-primary" role="button">⬅</a>
+            <a href="{{ paginator.previous_page_path }}" class="btn btn-primary" role="button">←</a>
           {% endif %}
         </div>
         <div class="col-md-4 pt-3 text-center">
@@ -66,7 +79,7 @@
         </div>
         <div class="col-md-2 pt-3 text-right">
           {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="btn btn-primary" role="button">➡</a>
+            <a href="{{ paginator.next_page_path }}" class="btn btn-primary" role="button">→</a>
           {% endif %}
         </div>
       </div>
@@ -83,12 +96,12 @@
             <div class="col-lg order-lg-1">
               <p class="d-none">⬇ 🇨🇱</p>
               <h2 class="text-lg-right">Sobre Mí</h2>
-              <p class="text-justify">Soy una mujer transgénero que vive en Santiago, Chile. Tengo 29 años, una licenciatura en biología, y un <em>minor</em> en emprendimiento; trabajo como desarrolladora full-stack, y tengo un especial interés en fotografía, moda y política. Pero más que nada, me gusta tener la oportunidad de compartirme con, y para el mundo.</p>
+              <p class="text-justify">Soy una mujer transgénero que vive en Santiago, Chile. Tengo 30 años, una licenciatura en biología, y un <em>minor</em> en emprendimiento; trabajo como desarrolladora full-stack, y tengo un especial interés en fotografía, moda y política. Aquí intento escribir sobre lo que me rodea, lo que me cuestiono, y lo que amo.</p>
             </div>
             <div class="col-lg order-lg-3">
               <p class="text-lg-right d-none"><span class="d-lg-none">⬇ </span>🇬🇧<span class="d-none d-lg-inline"> ⬇</span></p>
               <h2>About Me</h2>
-              <p class="text-justify">I'm a transgender woman who currently lives in Santiago, Chile. I'm 29, I have a BSc in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I also have a special interest in photography, fashion and politics. But most of all, I like to have the opportunity to share myself with and for the world.</p>
+              <p class="text-justify">I'm a transgender woman who lives in Santiago, Chile. I'm 30, I have a BSc in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I also have a special interest in photography, fashion and politics. Here I try to write about what I'm surrounded with, what I question, and what I love.</p>
             </div>
           </div>
         </div>

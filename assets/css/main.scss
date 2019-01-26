@@ -28,7 +28,7 @@ h1.szz-title {
 h1.szz-title a {
   text-decoration: none;
   color: $gray-700;
-  display: table-caption;
+/*display: table-caption; // Permite corte en cada palabra */
 }
 
 img {

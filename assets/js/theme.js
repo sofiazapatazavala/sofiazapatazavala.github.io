@@ -8,4 +8,6 @@ $(function() {
   /* JS puro para Twemoji */
   twemoji.parse(document.body);
 
+  
+
 });
