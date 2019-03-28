@@ -12,73 +12,18 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-8">
-          {% include header.html %}
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-8 pt-3">
-          <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-              {{ content }}
-              <div class="row">
-                {% for post in paginator.posts %}
-                <div class="{% cycle 'odd','even' %} {% cycle 'es','en' %} {% cycle 'col-lg-8','col-lg-4' %}">
-                  <div class="row my-3">
-                    <div class="col-lg col-izq {% cycle 'd-block', 'd-none' %}">
-                      {{ post.excerpt }}
-                    </div>
-                    <div class="col-lg col-der">
-                      <p class="post-meta fecha"><span class="cl">🇨🇱</span><span class="gb">🇬🇧</span> {{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
-                      <h2 class="title">
-                        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-                {% endfor %}
-              </div>
-              {% comment %}<p class="rss-subscribe my-3">Remember to use <a href="{{ "/feed.xml" | relative_url }}">RSS</a> to be safe about companies stealing your data.</p>{% endcomment %}
-            </div>
-          </main>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-2">
-          {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="btn btn-primary" role="button">←</a>
-          {% endif %}
-        </div>
-        <div class="col-md-4 pt-3 text-center">
-          <p>{{ paginator.page }} / {{ paginator.total_pages }}</p>
-        </div>
-        <div class="col-md-2 pt-3 text-right">
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="btn btn-primary" role="button">→</a>
-          {% endif %}
-        </div>
-      </div>
-
-      <hr>
-      {% comment %}Línea del about {% endcomment %}
-      <div class="row justify-content-center">
-        <div class="col-md-8 pt-3">
-          <div class="row">
-            <div class="col-lg align-self-end order-first order-lg-2">
-              <object type="image/svg+xml" data="{{ site.baseurl }}/assets/img/silueta-color.svg" class="silueta">
-              </object>
-            </div>
-            <div class="col-lg order-lg-1">
-              <p class="d-none">⬇ 🇨🇱</p>
-              <h2 class="text-lg-right">Sobre Mí</h2>
-              <p class="text-justify">Soy una mujer transgénero que vive en Santiago, Chile. Tengo 30 años, una licenciatura en biología, y un <em>minor</em> en emprendimiento; trabajo como desarrolladora full-stack, y tengo un especial interés en fotografía, moda y política. Aquí intento escribir sobre lo que me rodea, lo que me cuestiono, y lo que amo.</p>
-            </div>
-            <div class="col-lg order-lg-3">
-              <p class="text-lg-right d-none"><span class="d-lg-none">⬇ </span>🇬🇧<span class="d-none d-lg-inline"> ⬇</span></p>
-              <h2>About Me</h2>
-              <p class="text-justify">I'm a transgender woman who lives in Santiago, Chile. I'm 30, I have a BSc in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I also have a special interest in photography, fashion and politics. Here I try to write about what I'm surrounded with, what I question, and what I love.</p>
+          <div class="row justify-content-center">
+            <div class="col-3 col-sm-2 align-self-end">
+              <img src="{{ site.baseurl }}/assets/img/trazos.png" alt="">
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 pt-3">
+          <h3 class="display-3 text-center">ahora que soy, ¿quién soy?</h3>
+          <h1 class="display-1 text-center"> class="display-3 text-center"12/04/2019</h1>
         </div>
       </div>
 
