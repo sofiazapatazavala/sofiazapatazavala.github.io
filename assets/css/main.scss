@@ -31,9 +31,10 @@ body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, b
   background-color: $white;
   z-index: 9999;
 }
+
 .modal-menu {
   width: 100%;
-  display: none;
+  display: none!important;
 }
 .lista-menu li a {
   font-weight: 100;
