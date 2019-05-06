@@ -14,10 +14,34 @@ $theme-colors: map-merge((
 
 body {
   background: #f2f2f2;
+  overflow: hidden;
 }
 
 body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, body.page-darks h4, body.page-darks h5, body.page-darks h6  {
   color: $gray-200;
+}
+
+.modal-completo, .modal-menu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: $white;
+  z-index: 9999;
+}
+.modal-menu {
+  width: 100%;
+  display: none;
+}
+.lista-menu li a {
+  font-weight: 100;
+}
+
+.site-header {
+  height: 10vh;
+  background-color: $white;
 }
 
 h1.szz-title {
@@ -46,15 +70,20 @@ img.emoji {
 .page-darks h1.szz-title a, .page-darks h1.post-title {
   color: $gray-200;
 }
-
+/*
 .manuscrita {
   font-family: 'Indie Flower', sans-serif;
 }
+*/
 .post-meta {
   line-height: 85%;
 }
 .fecha-home {
   font-size: 21px;
+}
+
+.post-content {
+  text-align: justify;
 }
 
 .container-logo-SZZ {
@@ -68,17 +97,18 @@ img.emoji {
 
 .site-footer {
   line-height: 1.2rem;
-  border-top: solid 1px #999;
-  background-color: $gray-200;
+  //border-top: solid 1px #999;
+  background-color: $gray-800;
 }
 
-.site-footer p {
-  color: $gray-700!important;
+.site-footer p, .site-footer span {
+  color: $gray-300!important;
 }
 
-.page-darks span.text-muted {
-  color: $gray-200!important;
+.site-footer span.inferior {
+  color: $gray-600!important;
 }
+
 
 @media (min-width: 1200px) {
   .nav-szz li:nth-of-type(2), .nav-szz li:nth-of-type(4)  {
@@ -105,6 +135,15 @@ div.es span.gb, div.en span.cl {
 @media (min-width: 992px) {
   span.cl, span.gb {
     display: none;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .height-lg-60 {
+    height: 60vh;
+  }
+  .height-lg-20 {
+    height: 20vh;
   }
 }
 

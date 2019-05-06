@@ -1,6 +1,57 @@
       <header class="site-header" role="banner">
+
+        <!-- modal que tapa todo y se va al cargar -->
+        <div class="modal-completo text-center">
+              <img src="{{ site.baseurl }}/assets/img/trazos.svg" class="py-1" style="max-height: 10vh;">
+        </div>
+
+        <div class="row no-gutters justify-content-center">
+          <div class="col-3">
+            <img src="{{ site.baseurl }}/assets/img/trazos.svg" class="py-1 logo-menu" style="max-height: 10vh;">
+          </div>
+        </div>
+
+        <div class="modal-menu">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-3">
+                <img src="{{ site.baseurl }}/assets/img/trazos.svg" class="py-1 logo-menu" style="max-height: 10vh;">
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-6 col-lg-3 text-right">
+                <ul class="list-unstyled lista-menu menu-ES">
+                  <li class="h3"><a href="/">inicio</a></li>
+                  {% comment %}<li class="h3"><a href="#">archivo</a></li>
+                  <li class="h3"><a href="#">bio+CV (🇨🇱)</a></li>{% endcomment %}
+                </ul>
+                <hr>
+              </div>
+              <div class="col-6 col-lg-3">
+                <ul class="list-unstyled lista-menu menu-EN">
+                  <li class="h3"><a href="/">home</a></li>
+                  {% comment %}<li class="h3"><a href="#">archive</a></li>
+                  <li class="h3"><a href="#">bio+CV (🇬🇧)</a></li>{% endcomment %}
+                </ul>
+                <hr>
+              </div>
+            </div>
+            <div class="row justify-content-center text-weight-light">
+              <div class="col-6 col-lg-3 text-right">
+                <h3>sobre mí.</h3>
+                <p>me defino a mí misma como una "chica trans de vanguardia". eso significa saber descubrir, aprender, y reinventarte a cada momento. soy bióloga, trabajo como desarrolladora, y tengo también interés en fotografía, moda y política.</p>
+              </div>
+              <div class="col-6 col-lg-3">
+                <h3>about me.</h3>
+                <p>i define myself as a "state-of-the-art trans gal". that means to always discover, learn, and reinvent yourself at every moment. i'm a biologist, i work as a developer, and i also have interest in photography, fashion and politics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
         <div class="row justify-content-center">
-          <!-- Col que contiene logo -->
+          <!-- Col que contiene logo
           <div class="col-3 col-sm-2 align-self-end">
             <div class="pt-5 pb-3 px-2 container-logo-SZZ">
               <a href="{{ "/" | relative_url}}"><img src="{{ "/assets/img/logo.svg" | relative_url }}" class="logo-SZZ d-block mx-auto"></a>
@@ -11,7 +62,7 @@
             <h1 class="h4 my-2 szz-title"><a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h1>
           </div>
 
-          <!-- Col que contiene menú y links a redes -->
+          <!-- Col que contiene menú y links a redes
 
           <div class="col-6 col-sm-8 align-self-end">
             <nav class="nav nav-szz flex-column flex-xl-row py-3">
@@ -34,4 +85,5 @@
             <h1 class="h4 my-2 szz-title text-center"><a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h1>
           </div>
         </div>
+        -->
       </header>

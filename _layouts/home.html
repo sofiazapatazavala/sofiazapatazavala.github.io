@@ -2,11 +2,7 @@
 
   Hola.
 
-  Si estás buscando algo espectacular aquí, puedo decepcionarte o sorprenderte. No sé. El sitio está hecho con Jekyll, es solamente Bootstrap y jQuery que he programado, y está alojado en GitHub Pages.
-
-  Simple, ¿no? Es que me gusta el código que se pueda leer fácilmente. Y solo quiero escribir.
-
-  Ponme a prueba escribiéndome a hola [arroba] szz [punto] cl.
+  Ahora hay un changelog en /changelog, donde tal vez está lo que buscas. Ponme a prueba escribiéndome a hola [arroba] szz [punto] cl.
 
   S.
 
@@ -14,17 +10,13 @@
 
   Hi.
 
-  If you're looking for something spectacular here, I may disappoint you or amaze you. I don't know. The site is powered by Jekyll, is made with Bootstrap and some jQuery I coded, and it's hosted on GitHub Pages.
-
-  Simple, isn't it? I like the code that can be easily read. And I just want to write.
-
-  Try me by sending me an email to hola [at] szz [dot] cl.
+    There is a changelog now on /changelog, where maybe is what you want. Try me by sending me an email to hola [at] szz [dot] cl.
 
   S.
 
 -->
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">{% comment %}Cambiar a es-CL y ver traducciones.{% endcomment %}
+<html lang="{{ page.lang | default: site.lang | default: "es-CL" }}">
 
   {% include head.html %}
 
@@ -34,41 +26,70 @@
     {% endif %}
 
     {% comment %} Feed de 8 artículos {% endcomment %}
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          {% include header.html %}
-        </div>
-      </div>
 
-      <div class="row justify-content-center">
-        <div class="col-md-8 pt-3">
-          <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-              {{ content }}
-              <div class="row">
-                {% for post in paginator.posts %}
-                <div class="{% cycle 'odd','even' %} {% cycle 'es','en' %} {% cycle 'col-lg-8','col-lg-4' %}">
-                  <div class="row my-3">
-                    <div class="col-lg col-izq {% cycle 'd-block', 'd-none' %}">
-                      {{ post.excerpt }}
-                    </div>
-                    <div class="col-lg col-der">
-                      <p class="post-meta fecha"><span class="cl">🇨🇱</span><span class="gb">🇬🇧</span> {{ post.date | date: "%-d" }}/{{ post.date | date: "%b" }}/{{ post.date | date: "%Y" }}</p>
-                      <h2 class="title">
-                        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-                {% endfor %}
+    {% include header.html %}
+
+    <div class="row no-gutters">
+      {% for post in paginator.posts %}
+      <div class="col-lg-3 post-{% cycle '1', '2', '3', '4', '5', '6', '7', '8' %} order-lg-{% cycle '1', '5', '2', '6', '3', '7', '4', '8' %} height-lg-{% cycle '60', '20' %}">
+        <div class="{% cycle 'd-block', 'd-none' %}">
+          {% if post.image %}<img src="{{ post.image }}" class="pb-3">{% else %}{{ post.excerpt }}{% endif %}
+        </div>
+        <h2 class="h4 title p-2">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="row no-gutters" style="height: 10vh; background: #EEE;">
+      <div class="col d-flex align-items-center">
+        {% comment %}<p class="d-block mx-auto">publicaciones anteriores / previous posts.</p>{% endcomment %}
+      </div>
+    </div>
+
+{% comment %}
+    <div class="row no-gutters" style="height: 100vh; background: url({{ site.baseurl }}/assets/img/sof-blur@1,5x.jpg); background-size: cover;">
+      <div class="col">
+        <div class="row no-gutters justify-content-center" style="height: 50vh;">
+          <div class="col-6 col-lg-4 my-3" style="background: white;">
+            <div class="row">
+              <div class="col text-right p-3">
+                <h3>tal vez te preguntes quién soy.</h3>
+                <p>me pregunto lo mismo.</p>
+                <a href="#" class="btn btn-lg btn-primary" role="button">bio+CV (🇨🇱)</a>
               </div>
-              {% comment %}<p class="rss-subscribe my-3">Remember to use <a href="{{ "/feed.xml" | relative_url }}">RSS</a> to be safe about companies stealing your data.</p>{% endcomment %}
+              <div class="col p-3">
+                <h3>you may wonder who i am.</h3>
+                <p>i ask myself the same.</p>
+                <a href="#" class="btn btn-lg btn-primary" role="button">bio+CV (🇬🇧)</a>
+              </div>
             </div>
-          </main>
+          </div>
+        </div>
+        <div class="row no-gutters justify-content-center" style="height: 50vh;">
+          <div class="col-6 col-lg-4 my-3" style="background: white;">
+            <div class="row">
+              <div class="col text-right p-3">
+                <h3>¿cómo me puedes encontrar?</h3>
+              </div>
+              <div class="col p-3">
+                <h3>how can you reach me?</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <p>📸 @sofiazapatazavala<br>💌 hola@szz.cl</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+    </div>
+    {% endcomment %}
+
+      {% comment %}
+      <div class="row no-gutters">
         <div class="col-md-2">
           {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path }}" class="btn btn-primary" role="button">←</a>
@@ -83,33 +104,8 @@
           {% endif %}
         </div>
       </div>
+      {% endcomment %}
 
-      <hr>
-      {% comment %}Línea del about {% endcomment %}
-      <div class="row justify-content-center">
-        <div class="col-md-8 pt-3">
-          <div class="row">
-            <div class="col-lg align-self-end order-first order-lg-2">
-              <object type="image/svg+xml" data="{{ site.baseurl }}/assets/img/silueta-color.svg" class="silueta">
-              </object>
-            </div>
-            <div class="col-lg order-lg-1">
-              <p class="d-none">⬇ 🇨🇱</p>
-              <h2 class="text-lg-right">Sobre Mí</h2>
-              <p class="text-justify">Soy una mujer transgénero que vive en Santiago, Chile. Tengo 30 años, una licenciatura en biología, y un <em>minor</em> en emprendimiento; trabajo como desarrolladora full-stack, y tengo un especial interés en fotografía, moda y política. Aquí intento escribir sobre lo que me rodea, lo que me cuestiono, y lo que amo.</p>
-            </div>
-            <div class="col-lg order-lg-3">
-              <p class="text-lg-right d-none"><span class="d-lg-none">⬇ </span>🇬🇧<span class="d-none d-lg-inline"> ⬇</span></p>
-              <h2>About Me</h2>
-              <p class="text-justify">I'm a transgender woman who lives in Santiago, Chile. I'm 30, I have a BSc in Biology and a minor in Entrepreneurship, I work as a Full-Stack Developer, and I also have a special interest in photography, fashion and politics. Here I try to write about what I'm surrounded with, what I question, and what I love.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    {% include footer.html %}
 
   </body>
 

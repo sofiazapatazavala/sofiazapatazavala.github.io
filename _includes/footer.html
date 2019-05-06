@@ -1,20 +1,14 @@
-<footer class="site-footer mt-3 pt-1 pb-5">
+<footer class="site-footer mt-3 pt-1 pb-2">
   <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <p>Sofía Zapata Zavala<br>
-        <span class="text-muted">State-of-the-art trans gal. ✨</span></p>
+    <div class="row justify-content-between">
+      <div class="col-md-4 d-flex align-items-center">
+        <img src="{{ site.baseurl }}/assets/img/trazos.svg" alt="" class="d-inline mr-3" style="max-width: 40px; filter: invert(1);">
+        <span>Sofía Zapata Zavala</span>
       </div>
       <div class="col-md-4">
         {% assign pride = false %}
-        <p class="text-center text-md-right small">Made with{% if pride == true %} ❤🧡💛💚💙💜 {% else %} 🖤 {% endif %} from Santiago, using <a href="http://jekyllrb.com/">Jekyll</a>{% comment %}. <a href="{{ site.baseurl }}/changelog">version 1.0-<strong>beta</strong></a>{% endcomment %}.<br>Last generated: {{ site.time }}.<br>Build: {{ site.github.build_revision }}.</p>
+        <p class="text-center text-md-right small">From Santiago with{% if pride %} ❤🧡💛💚💙💜 {% else %} 💖 {% endif %} using <a href="http://jekyllrb.com/" style="color: #CCC;">Jekyll</a>.<br><span class="inferior">Last generated: {{ site.time }}.<br>Build: {{ site.github.build_revision }}.</span></p>
       </div>
     </div>
   </div>
 </footer>
-
-<script src="{{ "/assets/js/jquery.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/tether.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/theme.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/turbolinks.js" | relative_url }}"></script>

@@ -7,16 +7,14 @@
     {% if jekyll.environment == 'production' and site.google_tag_manager %}
       {% include gtm-noscript.html %}
     {% endif %}
+
+    {% include header.html %}
+
     <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-xl-6">
-          {% include header.html %}
-        </div>
-      </div>
       <div class="row justify-content-center">
         <div class="col-md-8 col-xl-6 pt-3">
           <main class="page-content" aria-label="Content">
-            <div class="wrapper">
+            <div class="wrapper">              
               {{ content }}
             </div>
           </main>
