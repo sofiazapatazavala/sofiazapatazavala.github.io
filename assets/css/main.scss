@@ -28,13 +28,13 @@ body.page-darks p, body.page-darks h1, body.page-darks h2, body.page-darks h3, b
   top: 0;
   left: 0;
   overflow: hidden;
-  background-color: $white;
+  background-color: #fff;
   z-index: 9999;
 }
 
 .modal-menu {
   width: 100%;
-  display: none!important;
+  display: none;
 }
 .lista-menu li a {
   font-weight: 100;
