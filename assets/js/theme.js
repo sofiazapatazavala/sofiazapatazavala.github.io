@@ -15,6 +15,8 @@ $(function() {
   $("body.home div.card p:first-of-type").addClass("m-0");
   $("body.home div.card img").addClass("card-img-top");
 
+  $("table").addClass("table");
+
   /* JS puro para Twemoji */
   twemoji.parse(document.body);
 

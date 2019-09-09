@@ -6,6 +6,13 @@ exclude: true
 order: 6
 ---
 
+# v1.2-alpha.1
+
+- Actualización de jQuery a v3.4.1
+- Actualización de Bootstrap a v4.3.1
+
+
+
 # v1.1
 
 - Actualización de Bootstrap a v4.2.1
