@@ -6,6 +6,11 @@ exclude: true
 order: 6
 ---
 
+# v1.2-beta.2
+
+- Agregada traducción del segundo artículo de esta ronda.
+- Corrección de errores.
+
 # v1.2-beta.1
 
 - Agregado botón al final de entradas para volver a la portada.
