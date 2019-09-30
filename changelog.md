@@ -8,8 +8,17 @@ order: 6
 
 # v1.2-beta.2
 
+<<<<<<< HEAD
 - Agregada traducción del segundo artículo de esta ronda.
 - Corrección de errores.
+=======
+<<<<<<< HEAD
+- Agregada traducción del segundo artículo de esta ronda.
+- Corrección de errores.
+=======
+- Corrección de errores críticos.
+>>>>>>> 91fb316ba8a6f36670677b249af4d0edfe6a6267
+>>>>>>> 6a7b8d6586349313ce69bd906712e217734a6d28
 
 # v1.2-beta.1
 
