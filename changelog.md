@@ -6,6 +6,10 @@ exclude: true
 order: 6
 ---
 
+# v1.2-beta.2
+
+- Corrección de errores críticos.
+
 # v1.2-beta.1
 
 - Agregado botón al final de entradas para volver a la portada.
