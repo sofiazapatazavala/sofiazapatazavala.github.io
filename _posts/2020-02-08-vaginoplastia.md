@@ -3,7 +3,7 @@ layout: post
 title:  "Decidí realizarme la vaginoplastía. Éstas son mis razones."
 date:   2020-01-28 21:00:00 -0300
 categories: ['es', 'transition']
-image: /blog-images/2019-09-estilo.jpg
+image: /blog-images/2020-02-ahiabajo.jpg
 ---
 
 Llegó el día.

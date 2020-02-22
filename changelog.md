@@ -6,7 +6,13 @@ exclude: true
 order: 6
 ---
 
-## v1.2-beta.3
+## v1.2
+
+- Se sale del esquema de versiones en construcción, pues el sitio web se ha mantenido sin cambios notables en el tiempo.
+- Se agregó el nombre de Sofía Zapata Zavala al menú.
+- Se agregaron los artículos de vaginoplastía.
+- FIXED: Se corrigió un problema que impedía una correcta visualización en tablets, dándole más espacio al footer para mostrar información.
+- Se implementó una nueva visualización de artículos para tablets en la portada.
 
 ## v1.2-beta.2
 
