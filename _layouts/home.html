@@ -1,19 +1,11 @@
 <!--
-
   Hola.
-
   Ahora hay un changelog en /changelog, donde tal vez está lo que buscas. Ponme a prueba escribiéndome a hola [arroba] szz [punto] cl.
-
   S.
-
   ---
-
   Hi.
-
     There is a changelog now on /changelog, where maybe is what you want. Try me by sending me an email to hola [at] szz [dot] cl.
-
   S.
-
 -->
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "es-CL" }}">
@@ -28,6 +20,8 @@
     {% comment %} Feed de 8 artículos {% endcomment %}
 
     {% include header.html %}
+
+    {% comment %}
 
     <div class="row g-0">
       {% for post in paginator.posts %}
@@ -60,10 +54,12 @@
           </div>
         </div>
 
-        {% comment %}<p class="d-block mx-auto">publicaciones anteriores / previous posts.</p>{% endcomment %}
+        {% comment %}<p class="d-block mx-auto">publicaciones anteriores / previous posts.</p>
 
       </div>
     </div>
+
+    {% endcomment %}
 
 {% comment %}
     <div class="row g-0" style="height: 100vh; background: url({{ site.baseurl }}/assets/img/sof-blur@1,5x.jpg); background-size: cover;">
